@@ -1,14 +1,11 @@
-/* ==========================================
-   CONFIGURACIÓN GENERAL & VARIABLES
-   ========================================== */
 :root {
     --bg-color: #f8fafc;
     --container-bg: #ffffff;
-    --text-main: #0f172a;       /* Azul Marino Carbón (A juego con tu traje) */
+    --text-main: #0f172a;      
     --text-muted: #64748b;
-    --accent: #166534;         /* Verde Bosque Elegante */
-    --accent-light: #22c55e;   /* Toque Verde Juvenil */
-    --accent-hover: #14532d;   /* Verde Bosque Oscuro */
+    --accent: #166534;         
+    --accent-light: #22c55e;   
+    --accent-hover: #14532d;   
     --border-color: #e2e8f0;
     --radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,9 +23,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* ==========================================
-   NAVEGACIÓN (ESTILO MINIMALISTA)
-   ========================================== */
 .navbar {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
@@ -65,9 +59,6 @@ body {
     border-bottom: 2px solid var(--accent);
 }
 
-/* ==========================================
-   HEADER / HERO SECTION
-   ========================================== */
 .hero-header {
     text-align: center;
     padding: 60px 20px 30px 20px;
@@ -79,7 +70,7 @@ body {
     margin: 0 auto 20px auto;
     border-radius: 50%;
     padding: 4px;
-    border: 2px solid var(--accent); /* Ahora el borde de la foto es verde bosque */
+    border: 2px solid var(--accent);
     background: var(--container-bg);
 }
 
@@ -107,9 +98,6 @@ body {
     font-weight: 600;
 }
 
-/* ==========================================
-   CONTENEDORES & ESTRUCTURA
-   ========================================== */
 .content-container {
     max-width: 750px;
     width: 100%;
@@ -127,7 +115,6 @@ body {
     margin-bottom: 45px;
 }
 
-/* Títulos Modernos con borde izquierdo Verde */
 .section-title {
     font-size: 20px;
     font-weight: 600;
@@ -144,9 +131,6 @@ body {
     margin: 0;
 }
 
-/* ==========================================
-   LISTAS Y DATOS DE CONTACTO
-   ========================================== */
 .contact-list {
     list-style: none;
     padding: 0;
@@ -182,9 +166,6 @@ body {
     text-decoration: underline;
 }
 
-/* ==========================================
-   TIMELINE (EDUCACIÓN Y EXPERIENCIA)
-   ========================================== */
 .timeline-item {
     padding: 0 0 25px 0;
     margin-bottom: 15px;
@@ -218,7 +199,6 @@ body {
     line-height: 1.6;
 }
 
-/* Habilidades en cuadrícula limpia */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -243,10 +223,6 @@ body {
     margin: 0;
     font-weight: 500;
 }
-
-/* ==========================================
-   TARJETAS DE PROYECTOS (ESTILO ELEGANTE)
-   ========================================== */
 .section-intro {
     color: var(--text-muted);
     margin: 0 0 25px 0;
@@ -256,58 +232,62 @@ body {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 16px; 
 }
 
 .project-card {
     background: var(--container-bg);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius);
+    border-radius: 8px; 
     overflow: hidden;
     transition: var(--transition);
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 20px -8px rgba(22, 101, 52, 0.15); /* Sombra sutil con tono verde */
-    border-color: #cbd5e1;
-}
-
-.project-image-wrapper {
-    background-color: #f1f5f9;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -6px rgba(22, 101, 52, 0.12); 
+    border-color: var(--accent); 
 }
 
 .project-info {
-    padding: 20px;
+    padding: 18px 22px; 
+}
+
+.project-header-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    gap: 10px;
+    flex-wrap: wrap; 
 }
 
 .project-name {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    margin: 0;
+    color: var(--text-main);
+}
+
+.project-tech-badge {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent);
+    background-color: #f0fdf4; 
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
 }
 
 .project-text {
     font-size: 14px;
     color: var(--text-muted);
-    line-height: 1.6;
-    margin: 0 0 16px 0;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
 }
 
 .btn-minimal {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--accent);
     text-decoration: none;
@@ -320,9 +300,6 @@ body {
     transform: translateX(4px);
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
 .main-footer {
     border-top: 1px solid var(--border-color);
     background-color: var(--container-bg);
