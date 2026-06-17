@@ -1,11 +1,14 @@
+/* ==========================================
+   CONFIGURACIÓN GENERAL & VARIABLES
+   ========================================== */
 :root {
     --bg-color: #f8fafc;
     --container-bg: #ffffff;
-    --text-main: #0f172a;      
+    --text-main: #0f172a;       /* Azul Marino Carbón (A juego con tu traje) */
     --text-muted: #64748b;
-    --accent: #166534;         
-    --accent-light: #22c55e;   
-    --accent-hover: #14532d;   
+    --accent: #166534;         /* Verde Bosque Elegante */
+    --accent-light: #22c55e;   /* Toque Verde Juvenil */
+    --accent-hover: #14532d;   /* Verde Bosque Oscuro */
     --border-color: #e2e8f0;
     --radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,6 +26,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* ==========================================
+   NAVEGACIÓN (ESTILO MINIMALISTA)
+   ========================================== */
 .navbar {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
@@ -59,6 +65,9 @@ body {
     border-bottom: 2px solid var(--accent);
 }
 
+/* ==========================================
+   HEADER / HERO SECTION
+   ========================================== */
 .hero-header {
     text-align: center;
     padding: 60px 20px 30px 20px;
@@ -98,6 +107,9 @@ body {
     font-weight: 600;
 }
 
+/* ==========================================
+   CONTENEDORES & ESTRUCTURA
+   ========================================== */
 .content-container {
     max-width: 750px;
     width: 100%;
@@ -131,6 +143,9 @@ body {
     margin: 0;
 }
 
+/* ==========================================
+   LISTAS Y DATOS DE CONTACTO
+   ========================================== */
 .contact-list {
     list-style: none;
     padding: 0;
@@ -166,6 +181,9 @@ body {
     text-decoration: underline;
 }
 
+/* ==========================================
+   TIMELINE (EDUCACIÓN Y EXPERIENCIA)
+   ========================================== */
 .timeline-item {
     padding: 0 0 25px 0;
     margin-bottom: 15px;
@@ -199,6 +217,7 @@ body {
     line-height: 1.6;
 }
 
+/* Habilidades */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -223,6 +242,10 @@ body {
     margin: 0;
     font-weight: 500;
 }
+
+/* ==========================================
+   TARJETAS DE PROYECTOS (ESTILO RECTANGULAR ANGOSTO)
+   ========================================== */
 .section-intro {
     color: var(--text-muted);
     margin: 0 0 25px 0;
@@ -232,25 +255,25 @@ body {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 16px; 
+    gap: 16px; /* Espaciado más compacto entre las cajas */
 }
 
 .project-card {
     background: var(--container-bg);
     border: 1px solid var(--border-color);
-    border-radius: 8px; 
+    border-radius: 8px; /* Bordes sutiles para look técnico */
     overflow: hidden;
     transition: var(--transition);
 }
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px -6px rgba(22, 101, 52, 0.12); 
-    border-color: var(--accent); 
+    box-shadow: 0 8px 16px -6px rgba(22, 101, 52, 0.12); /* Brillo sutil verde bosque */
+    border-color: var(--accent); /* Cambia el borde a verde al pasar el mouse */
 }
 
 .project-info {
-    padding: 18px 22px; 
+    padding: 18px 22px; /* Caja más angosta y compacta */
 }
 
 .project-header-meta {
@@ -259,7 +282,7 @@ body {
     align-items: baseline;
     margin-bottom: 8px;
     gap: 10px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Se adapta a celulares */
 }
 
 .project-name {
@@ -273,7 +296,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: var(--accent);
-    background-color: #f0fdf4; 
+    background-color: #f0fdf4; /* Fondo verde muy suave */
     padding: 3px 8px;
     border-radius: 4px;
     letter-spacing: 0.3px;
@@ -300,6 +323,9 @@ body {
     transform: translateX(4px);
 }
 
+/* ==========================================
+   FOOTER
+   ========================================== */
 .main-footer {
     border-top: 1px solid var(--border-color);
     background-color: var(--container-bg);
