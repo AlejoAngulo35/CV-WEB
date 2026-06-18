@@ -4,7 +4,7 @@
 :root {
     --bg-color: #f8fafc;
     --container-bg: #ffffff;
-    --text-main: #0f172a;       /* Azul Marino Carbón (A juego con tu traje) */
+    --text-main: #0f172a;       /* Azul Marino Carbón */
     --text-muted: #64748b;
     --accent: #166534;         /* Verde Bosque Elegante */
     --accent-light: #22c55e;   /* Toque Verde Juvenil */
@@ -224,11 +224,6 @@ body {
     gap: 20px;
 }
 
-@media (max-width: 600px) {
-    .skills-grid { grid-template-columns: 1fr; }
-    .contact-list .label { display: block; margin-bottom: 4px; }
-}
-
 .skill-category h4 {
     font-size: 14px;
     text-transform: uppercase;
@@ -255,25 +250,25 @@ body {
 .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Espaciado más compacto entre las cajas */
+    gap: 16px;
 }
 
 .project-card {
     background: var(--container-bg);
     border: 1px solid var(--border-color);
-    border-radius: 8px; /* Bordes sutiles para look técnico */
+    border-radius: 8px;
     overflow: hidden;
     transition: var(--transition);
 }
 
 .project-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px -6px rgba(22, 101, 52, 0.12); /* Brillo sutil verde bosque */
-    border-color: var(--accent); /* Cambia el borde a verde al pasar el mouse */
+    box-shadow: 0 8px 16px -6px rgba(22, 101, 52, 0.12);
+    border-color: var(--accent);
 }
 
 .project-info {
-    padding: 18px 22px; /* Caja más angosta y compacta */
+    padding: 18px 22px;
 }
 
 .project-header-meta {
@@ -282,7 +277,7 @@ body {
     align-items: baseline;
     margin-bottom: 8px;
     gap: 10px;
-    flex-wrap: wrap; /* Se adapta a celulares */
+    flex-wrap: wrap;
 }
 
 .project-name {
@@ -296,7 +291,7 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: var(--accent);
-    background-color: #f0fdf4; /* Fondo verde muy suave */
+    background-color: #f0fdf4;
     padding: 3px 8px;
     border-radius: 4px;
     letter-spacing: 0.3px;
@@ -334,4 +329,60 @@ body {
     margin-top: auto;
     font-size: 13px;
     color: var(--text-muted);
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
+   ========================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    .nav-links li {
+        margin: 0;
+    }
+
+    .hero-header {
+        padding: 30px 15px 20px 15px;
+    }
+    
+    .avatar-container {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .header-title {
+        font-size: 26px;
+    }
+    
+    .header-subtitle {
+        font-size: 14px;
+    }
+
+    .content-container {
+        padding: 0 15px;
+    }
+
+    .skills-grid { 
+        grid-template-columns: 1fr; 
+    }
+
+    .contact-list .label { 
+        display: block; 
+        margin-bottom: 6px; 
+    }
+
+    .project-info {
+        padding: 15px; 
+    }
+
+    .project-header-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
 }
